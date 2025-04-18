@@ -141,6 +141,8 @@ class AdvancedBoardLogic(BasicBoardLogic):
             if self_point >= max_point:
                 next_mark = (row, col)
         return next_mark
+    def loadBoard(self, board_2d):
+        self.board = board_2d  # giả sử self.board là mảng 2D
 
     def getSquaresHasPointLargeThan(self, selfPlayer, oppositePlayer, minPoint):
         emptySqr = self.getEmptySquares()
